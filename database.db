@@ -1,0 +1,10 @@
+{
+  "ids": {
+    "User": 2
+  },
+  "models": {
+    "User": {
+      "1": "{\"username\":\"dmanavi\",\"password\":\"1234567!@#\",\"isEnabled\":true,\"createdAt\":\"2020-11-17T10:39:04.960Z\",\"updatedAt\":\"2020-11-17T10:39:04.960Z\",\"lastLoginAt\":\"2020-11-17T10:39:04.960Z\",\"id\":1}"
+    }
+  }
+}
