@@ -28,6 +28,11 @@ You can also run `node .` to skip the build step.
 
 Open http://127.0.0.1:3000 in your browser.
 
+
+## Explore API
+
+API documentation is available via http://127.0.0.1:3000/explorer.
+
 ## Rebuild the project
 
 To incrementally build the project:
