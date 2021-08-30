@@ -1,17 +1,15 @@
-import { useCallback } from "react";
-import { FC } from "react";
+import { FC, useCallback } from "react";
 import Filters from "../../components/Filters";
-import { useEnergyConsumption } from "../EnergyConsumption/context";
-import { useFilters } from "./context";
-import { FiltersStateShape } from "./types";
+import { FiltersProps } from "../../components/Filters/types";
 import {
   fetchEnergyConsumptionFailed,
   fetchEnergyConsumptionRequest,
   fetchEnergyConsumptionSuccess,
 } from "../EnergyConsumption/actions";
-import WithApi from "../EnergyConsumption/withApi";
-import { FiltersProps } from "../../components/Filters/types";
-import { WithApiProps } from "../EnergyConsumption/types";
+import { useEnergyConsumption } from "../EnergyConsumption/context";
+import { useFilters } from "./context";
+import { FiltersStateShape, WithApiProps } from "./types";
+import WithApi from "./withApi";
 
 const FiltersContainer: FC = () => {
   const { filters, setFilters } = useFilters();

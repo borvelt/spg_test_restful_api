@@ -1,5 +1,9 @@
 import { Dispatch, SetStateAction } from "react";
-import { ConsumptionTypes } from "../EnergyConsumption/types";
+import {
+  ConsumptionTypes,
+  EnergyConsumptionActionTypes,
+  EnergyConsumptionPayloadTypes,
+} from "../EnergyConsumption/types";
 
 export type FilterContextProps = {
   filters: FiltersStateShape;
@@ -16,4 +20,15 @@ export type FiltersStateShape = {
     month: number;
     year: number;
   };
+};
+
+export type WithApiProps = {
+  fetchEnergyConsumptionRequest: () => void;
+  fetchEnergyConsumptionSuccess: (
+    x: EnergyConsumptionPayloadTypes[EnergyConsumptionActionTypes.Success]
+  ) => void;
+  fetchEnergyConsumptionFailed: (
+    e: EnergyConsumptionPayloadTypes[EnergyConsumptionActionTypes.Failed]
+  ) => void;
+  currentFilters: FiltersStateShape;
 };

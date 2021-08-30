@@ -1,5 +1,3 @@
-import { FiltersStateShape } from "../Filters/types";
-
 // create Action based on payload
 export type Action<M extends { [index: string]: any }> = {
   [Key in keyof M]: M[Key] extends undefined
@@ -54,17 +52,6 @@ export type Dispatch = (action: EnergyConsumptionAction) => void;
 
 export type LoadingProps = {
   loading: boolean;
-};
-
-export type WithApiProps = {
-  fetchEnergyConsumptionRequest: () => void;
-  fetchEnergyConsumptionSuccess: (
-    x: EnergyConsumptionPayloadTypes[EnergyConsumptionActionTypes.Success]
-  ) => void;
-  fetchEnergyConsumptionFailed: (
-    e: EnergyConsumptionPayloadTypes[EnergyConsumptionActionTypes.Failed]
-  ) => void;
-  currentFilters: FiltersStateShape;
 };
 
 export enum ConsumptionTypes {

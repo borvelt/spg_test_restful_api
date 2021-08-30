@@ -1,6 +1,6 @@
 import { FC, useEffect } from "react";
+import { sendFetchEnergyConsumptionRequest } from "../EnergyConsumption/api";
 import { FiltersStateShape } from "../Filters/types";
-import { sendFetchEnergyConsumptionRequest } from "./api";
 import { WithApiProps } from "./types";
 
 // a wrapper function which adds the api functionality to the component.
