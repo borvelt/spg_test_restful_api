@@ -16,10 +16,12 @@ Please run this command to prepare the environment. `run npm bootstrap`
 
 ### Development Mode
 
-Run application in development mode with `npm run development`
+Run application in development mode with `npm run development`.
+Front-End application is accessible on http://localhost:3001/.
 
 ### production Mode
 
 Incase of using service-workers on the front-end application you can run application on production mode.
-
 `npm run production`
+
+Front-End application is accessible on http://localhost:3002/.
