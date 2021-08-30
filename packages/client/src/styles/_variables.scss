@@ -1,0 +1,26 @@
+$baseFontSize: 18px;
+$fontFamily: arial;
+$primaryCyan: hsl(180, 66%, 49%);
+$primaryDarkViolet: hsl(257, 27%, 26%);
+$lightGray: rgb(158 154 167 / 25%);
+$grayishViolet: hsl(257, 7%, 63%);
+$white: #fff;
+$black: #000;
+
+// create name for sizes, it can help us in style maintainability
+$spacer: 1rem;
+
+$spaces: (
+  'xs': 0.5 * $spacer,
+  's': 0.75 * $spacer,
+  'x': $spacer,
+  'xl': 1.25 * $spacer,
+);
+
+$fontSizes: (
+  'x': $baseFontSize,
+);
+
+$borderRadius: (
+  'smooth': 7px,
+);

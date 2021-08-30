@@ -1,0 +1,6 @@
+@use 'sass:map';
+@use '../../styles/variables';
+
+.label {
+  margin-right: map.get(variables.$spaces, "xs");
+}

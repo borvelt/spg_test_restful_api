@@ -1,0 +1,10 @@
+@use 'sass:map';
+@use '../../styles/variables';
+
+.datePickerFilters {
+  margin-bottom: map.get(variables.$spaces, "x");
+}
+.filtersContainer {
+  display: flex;
+  justify-content: space-around;
+}

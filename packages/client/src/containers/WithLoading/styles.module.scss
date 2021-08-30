@@ -1,0 +1,12 @@
+@use '../../styles/variables';
+
+.loading {
+  position: absolute;
+  background-color: variables.$grayishViolet;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.5;
+}

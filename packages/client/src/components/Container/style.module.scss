@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+}
+
+.containerFluid {
+  composes: container;
+  width: 100%;
+}
+
+.containerBox {
+  composes: container;
+  width: 85%;
+}
+.containerCentered {
+  composes: container;
+  text-align: center;
+}
