@@ -30,6 +30,7 @@
     "rebuild": "npm run clean && npm run build",
     "prestart": "npm run rebuild",
     "start": "PORT=3000 node -r source-map-support/register .",
+    "serve": "npm run start",
     "clean": "lb-clean dist *.tsbuildinfo .eslintcache"
   },
   "repository": {

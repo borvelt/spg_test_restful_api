@@ -1,6 +1,11 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "development": "npx lerna run start",
+    "client-production": "npx lerna exec --scope spg-client npm run build",
+    "production": "npm run client-production && npx lerna run serve"
+  },
   "devDependencies": {
     "lerna": "^4.0.0"
   }
