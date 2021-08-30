@@ -2,6 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "bootstrap": "npx lerna bootstrap",
     "development": "npx lerna run start",
     "client-production": "npx lerna exec --scope spg-client npm run build",
     "production": "npm run client-production && npx lerna run serve"

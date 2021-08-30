@@ -10,6 +10,10 @@ Components folder holds some pure components without any side-effects.
 
 Containers folder holds application context and components which has been created by the composition of small components.
 
+### Install
+
+Please run this command to prepare the environment. `run npm bootstrap`
+
 ### Development Mode
 
 Run application in development mode with `npm run development`
